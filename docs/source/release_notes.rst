@@ -19,7 +19,7 @@ Authors:
 * `esc <https://github.com/esc>`_
 * `renovate[bot] <https://github.com/apps/renovate>`_
 
-Version 0.0.7 - 2024-02-07
+Version 0.0.7 - 2025-02-07
 ==========================
 
 The first release of the project under the new name ``numba-scfg``.
@@ -32,7 +32,7 @@ Authors:
 
 * `esc <https://github.com/esc>`_
 
-Version 0.0.6 - 2024-02-07
+Version 0.0.6 - 2025-02-07
 ==========================
 
 Final release of the project as ``numba-rvsdg``. The project is being renamed
