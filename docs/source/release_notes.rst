@@ -2,6 +2,23 @@
 Release Notes
 =============
 
+
+Version 0.0.8 - 2025-03-06
+==========================
+
+A release to fixup the missing rename of the project in the docs.
+
+Pull-Requests:
+
+* PR `#170 <https://github.com/numba/numba-scfg/pull/170>`_: Cherry pick release notes 0.0.6 and 0.0.7 (`esc <https://github.com/esc>`_)
+* PR `#171 <https://github.com/numba/numba-scfg/pull/171>`_: Rename project in docs (`esc <https://github.com/esc>`_)
+* PR `#172 <https://github.com/numba/numba-scfg/pull/172>`_: Update pre-commit hook pycqa/flake8 to v7.1.2 (`renovate[bot] <https://github.com/apps/renovate>`_)
+
+Authors:
+
+* `esc <https://github.com/esc>`_
+* `renovate[bot] <https://github.com/apps/renovate>`_
+
 Version 0.0.7 - 2024-02-07
 ==========================
 
