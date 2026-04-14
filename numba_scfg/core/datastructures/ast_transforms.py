@@ -730,12 +730,10 @@ class AST2SCFGTransformer:
         last_target_value = f"__scfg_iter_last_{head_index}__"
 
         # Emit iterator setup to pre-header.
-        preheader_code = textwrap.dedent(
-            f"""
+        preheader_code = textwrap.dedent(f"""
             {iter_assign} = iter({iter_setup})
             {target} = None
-        """
-        )
+        """)
         self.codegen(ast.parse(preheader_code).body)
 
         # Point the current_block to header block.
@@ -748,13 +746,11 @@ class AST2SCFGTransformer:
         # should continue.  The '__scfg__sentinel__' is an singleton style
         # marker, so it need not be versioned.
 
-        header_code = textwrap.dedent(
-            f"""
+        header_code = textwrap.dedent(f"""
             {last_target_value} = {target}
             {target} = next({iter_assign}, "__scfg_sentinel__")
             {target} != "__scfg_sentinel__"
-        """
-        )
+        """)
         self.codegen(ast.parse(header_code).body)
         # Set the jump targets to be the body and the else block.
         self.current_block.set_jump_targets(body_index, else_index)
@@ -781,11 +777,9 @@ class AST2SCFGTransformer:
 
         # Emit orelse instructions. Needs to be prefixed with an assignment
         # such that the for loop target can escape the scope of the loop.
-        else_code = textwrap.dedent(
-            f"""
+        else_code = textwrap.dedent(f"""
             {target} = {last_target_value}
-        """
-        )
+        """)
         self.codegen(ast.parse(else_code).body)
 
         # Recurs into the body of the else-branch.

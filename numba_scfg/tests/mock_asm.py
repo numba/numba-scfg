@@ -5,7 +5,6 @@ Defines a mock assembly with a minimal operation semantic for testing
 control flow transformation.
 """
 
-
 from dataclasses import dataclass
 from enum import IntEnum
 from typing import IO, List, Tuple

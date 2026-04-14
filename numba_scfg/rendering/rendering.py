@@ -16,7 +16,6 @@ import dis
 from typing import Dict, Optional
 from graphviz import Digraph
 
-
 node_style_kwargs = {"shape": "rect", "style": "rounded"}
 
 

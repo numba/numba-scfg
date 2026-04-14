@@ -165,8 +165,7 @@ class TestSCFGIterator(SCFGComparator):
             (block_0, BasicBlock(name=block_0, _jump_targets=(block_1,))),
             (block_1, BasicBlock(name=block_1)),
         ]
-        scfg, _ = SCFG.from_yaml(
-            """
+        scfg, _ = SCFG.from_yaml("""
         blocks:
             'basic_block_0':
                 type: basic
@@ -176,8 +175,7 @@ class TestSCFGIterator(SCFGComparator):
             'basic_block_0': ['basic_block_1']
             'basic_block_1': []
         backedges:
-        """
-        )
+        """)
         received = list(scfg)
         self.assertEqual(expected, received)
 
