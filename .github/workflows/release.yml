@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - id: create-gh-release
-        uses: taiki-e/create-gh-release-action@f67cf7b2dadd83d36b981e674a6b08063997ce68 # v1.10.0
+        uses: taiki-e/create-gh-release-action@eba8ea96c86cca8a37f1b56e94b4d13301fba651 # v1.11.0
         with:
           draft: true
           token: ${{ secrets.GITHUB_TOKEN }}
