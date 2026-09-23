@@ -17,6 +17,6 @@ conda-env:
 	conda create -n numba-scfg
 conda-install:
 	conda install python=3.12 python-graphviz pyyaml pytest sphinx sphinx_rtd_theme coverage flake8 mypy
-	python -m pip install types-pyyaml types-filelock types-setuptools
+	python -m pip install types-pyyaml
 clean:
 	git clean -dfX

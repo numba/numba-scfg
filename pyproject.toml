@@ -34,7 +34,5 @@ dev = [
     "sphinx-rtd-theme",
     "flake8",
     "mypy",
-    "types-pyyaml",
-    "types-filelock",
-    "types-setuptools"
+    "types-pyyaml"
 ]
