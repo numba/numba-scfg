@@ -26,7 +26,7 @@ jobs:
           auto-activate-base: false
       - name: Install dependencies
         run: make conda-install
-      - name: Lint code with pre-commit
+      - name: Lint code with flake8 and mypy
         run: make lint
       - name: Install numba_scfg with pip
         run: make build

@@ -9,12 +9,14 @@ test:
 	COVERAGE_CORE=sysmon coverage run -m pytest --pyargs numba_scfg
 	coverage report
 lint:
-	pre-commit run --verbose --all-files
+	flake8 numba_scfg
+	mypy
 docs:
 	cd docs && make html
 conda-env:
 	conda create -n numba-scfg
 conda-install:
-	conda install python=3.12 python-graphviz pyyaml pytest sphinx sphinx_rtd_theme coverage pre-commit
+	conda install python=3.12 python-graphviz pyyaml pytest sphinx sphinx_rtd_theme coverage flake8 mypy
+	python -m pip install types-pyyaml
 clean:
 	git clean -dfX

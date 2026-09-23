@@ -3,8 +3,5 @@
   "extends": [
     "config:recommended",
     "helpers:pinGitHubActionDigestsToSemver"
-  ],
-  "pre-commit": {
-    "enabled": true
-  }
+  ]
 }
