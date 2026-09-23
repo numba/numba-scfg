@@ -31,5 +31,10 @@ dev = [
     "myst-parser",
     "furo",
     "pytest",
-    "sphinx-rtd-theme"
+    "sphinx-rtd-theme",
+    "flake8",
+    "mypy",
+    "types-pyyaml",
+    "types-filelock",
+    "types-setuptools"
 ]
